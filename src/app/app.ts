@@ -1,10 +1,11 @@
 import { AfterViewInit, Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { from, fromEvent } from 'rxjs';
+import { NewObservable } from './components/new-observable/new-observable';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet,NewObservable],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
